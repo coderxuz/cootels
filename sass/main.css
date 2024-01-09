@@ -176,6 +176,7 @@
 .activities__cabin {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .activities__cabin img {
   width: 384px;
@@ -206,6 +207,8 @@
 .activities__organic {
   display: flex;
   justify-content: space-between;
+  align-items: start;
+  margin-top: 70px;
 }
 .activities__organic img {
   width: 384px;
@@ -238,8 +241,8 @@
 .activities__organic__right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .rooms {
@@ -343,6 +346,9 @@
   line-height: 150%;
   /* 27px */
 }
+.rooms__item__list__learn p:hover {
+  color: red;
+}
 .rooms__item__list__learn img {
   width: 20px;
   height: 20px;
@@ -422,6 +428,9 @@
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+}
+.get__room__btn a:hover {
+  color: red;
 }
 .get__choose {
   display: flex;
@@ -522,24 +531,23 @@
 }
 
 footer {
-  display: flex;
-  height: 444px;
-  padding: 120px 184px 120px 120px;
   background-color: #0B265A;
+  padding: 100px 0;
 }
-footer .cootels {
+
+.cootels {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer .cootels__manu {
+.cootels__manu {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
   gap: 20px;
 }
-footer .cootels__manu h1 {
+.cootels__manu h1 {
   color: #FFF;
   font-family: "Montserrat";
   font-size: 32px;
@@ -548,7 +556,7 @@ footer .cootels__manu h1 {
   line-height: normal;
   letter-spacing: -0.32px;
 }
-footer .cootels__manu p {
+.cootels__manu p {
   color: #D9DBDE;
   font-family: "Inter";
   font-size: 16px;
@@ -557,19 +565,19 @@ footer .cootels__manu p {
   line-height: 28px;
   /* 175% */
 }
-footer .cootels__manu__social {
+.cootels__manu__social {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-footer .cootels__contact {
+.cootels__contact {
   display: flex;
   justify-content: space-between;
   align-items: start;
   gap: 100px;
 }
-footer .cootels__contact ul {
+.cootels__contact__item {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -577,7 +585,7 @@ footer .cootels__contact ul {
   justify-content: space-between;
   gap: 10px;
 }
-footer .cootels__contact ul a {
+.cootels__contact__item a {
   text-decoration: none;
   color: #D9DBDE;
   font-family: "Inter";
@@ -586,7 +594,10 @@ footer .cootels__contact ul a {
   font-weight: 400;
   line-height: normal;
 }
-footer .cootels__contact ul p {
+.cootels__contact__item a:hover {
+  color: red;
+}
+.cootels__contact__item p {
   color: #FFF;
   font-family: "Inter";
   font-size: 16px;
@@ -600,6 +611,7 @@ footer .cootels__contact ul p {
   position: fixed;
   z-index: 2;
   background-color: white;
+  margin-top: 0px;
 }
 
 header {
@@ -611,4 +623,8 @@ button:hover {
   background-color: white;
   color: #000;
   border: 4px solid black;
+}
+
+button {
+  border: 5px solid #000;
 }/*# sourceMappingURL=main.css.map */
